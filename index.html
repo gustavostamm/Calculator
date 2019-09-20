@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/Style.css" type="text/css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="bodycalc">
+        <input id="result" type="text" name="result" />
+        <tr>
+            <td><button onclick="result.value=''" class="button first" id="clean">C</button></td>
+            <td><button class="button green" id="division" onclick="result.value+='/'">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="button first" id="seven" onclick="result.value+='7'">7</button></td>
+            <td><button class="button" id="eight" onclick="result.value+='8'">8</button></td>
+            <td><button class="button" id="nine" onclick="result.value+='9'">9</button></td>
+            <td><button class="button green" id="times" onclick="result.value+='*'">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="button first" id="four" onclick="result.value+='4'">4</button></td>
+            <td><button class="button" id="five" onclick="result.value+='5'">5</button></td>
+            <td><button class="button" id="six" onclick="result.value+='6'">6</button></td>
+            <td><button class="button green" id="minus" onclick="result.value+='-'">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="button first" id="one" onclick="result.value+='1'">1</button></td>
+            <td><button class="button" id="two" onclick="result.value+='2'">2</button></td>
+            <td><button class="button" id="three" onclick="result.value+='3'">3</button></td>
+            <td><button class="button green" id="division" onclick="result.value+='+'">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="button first" id="sinal" onclick="result.value+='-'">+/-</button></td>
+            <td><button class="button" id="zero" onclick="result.value+='0'">0</button></td>
+            <td><button class="button" id="dot" onclick="result.value+='.'">.</button></td>
+            <td><button class="button greenback" id="equal" onclick="result.value = eval(result.value)">=</button></td>
+        </tr>
+    </div>
+</body>
+</html>
